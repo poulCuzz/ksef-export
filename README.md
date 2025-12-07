@@ -12,29 +12,13 @@
   <a href="#-licencja">Licencja</a>
 </p>
 
-<p align="center">
-  <img src="https://img.shields.io/badge/PHP-8.0+-777BB4?style=flat-square&logo=php&logoColor=white" alt="PHP 8.0+">
-  <img src="https://img.shields.io/badge/KSeF-API%20v2.0-blue?style=flat-square" alt="KSeF API v2.0">
-  <img src="https://img.shields.io/badge/Licencja-MIT-green?style=flat-square" alt="MIT License">
-</p>
-
 ---
 
 ## 📸 Podgląd
 
 <p align="center">
-  <img src="docs/images/screenshot-form.png" alt="Formularz" width="400">
   <img src="docs/images/screenshot-success.png" alt="Sukces" width="400">
 </p>
-
-<details>
-<summary>🖼️ Więcej screenów</summary>
-
-| Ładowanie | Oczekiwanie | Błąd |
-|:---------:|:-----------:|:----:|
-| ![Ładowanie](docs/images/screenshot-loading.png) | ![Oczekiwanie](docs/images/screenshot-waiting.png) | ![Błąd](docs/images/screenshot-error.png) |
-
-</details>
 
 ---
 
@@ -207,21 +191,6 @@ ksef-export/
 
 - Upewnij się że pliki `.pem` są w katalogach `auth/` i `export/`
 - Sprawdź czy certyfikaty są aktualne
-
----
-
-## 🤝 Współpraca
-
-Znalazłeś błąd? Masz pomysł na funkcję?
-
-1. Otwórz [Issue](https://github.com/poulCuzz/ksef-export/issues)
-2. Lub stwórz Pull Request
-
----
-
-## 📄 Licencja
-
-Ten projekt jest dostępny na licencji MIT. Zobacz plik [LICENSE](LICENSE) po szczegóły.
 
 ---
 
