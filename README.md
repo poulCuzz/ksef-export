@@ -133,15 +133,28 @@ ksef-export/
 ├── logger.php             # System logowania
 ├── composer.json          # Zależności PHP
 ├── auth/
-│   └── public_key.pem     # Certyfikat autoryzacji
+│   ├── get_challenge.php           # Pobieranie challenge z KSeF
+│   ├── encrypt_token.php           # Szyfrowanie tokena RSA-OAEP
+│   ├── get_auth_token.php          # Uzyskiwanie authenticationToken
+│   ├── get_access_token.php        # Wymiana na accessToken
+│   ├── refresh_access_token.php    # Odświeżanie accessToken
+│   └── public_key.pem              # Certyfikat autoryzacji
 ├── export/
+│   ├── generate_encryption.php     # Generowanie kluczy AES
+│   ├── send_export_request.php     # Wysyłanie żądania eksportu
+│   ├── get_export_status.php       # Sprawdzanie statusu eksportu
+│   ├── download_aes.php            # Pobieranie pliku .aes
+│   ├── decrypt_aes.php             # Deszyfrowanie AES-256-CBC
 │   └── public_key_symetric_encription.pem  # Certyfikat szyfrowania
+├── error/
+│   ├── classify_error.php          # Klasyfikacja błędów
+│   └── error_response.php          # Formatowanie odpowiedzi błędów
 ├── logs/
-│   └── ksef_api_log.json  # Logi operacji (tworzony automatycznie)
+│   └── ksef_api_log.json           # Logi operacji (tworzony automatycznie)
 ├── temp/
-│   └── session_*.json     # Sesje tymczasowe (tworzone automatycznie)
+│   └── session_*.json              # Sesje tymczasowe (tworzone automatycznie)
 └── docs/
-    └── images/            # Screenshoty
+    └── images/                     # Screenshoty aplikacji
 ```
 
 ### API Endpoints
